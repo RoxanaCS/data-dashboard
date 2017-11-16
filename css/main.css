@@ -10,6 +10,10 @@ header{
   width: 10em;
   margin: 1em 0 1em 35em;
 }
+#bars{
+  color: black;
+  font-size: 1.8em;
+}
 .section1{
   background-color: #E1E1E1;
   height: 6em;
