@@ -60,7 +60,7 @@ button[type=button]{
      overflow: auto;
  }
  .box{
-     background-color: #fff;
+     background-color: #ddd;
      width: 25%;
      height: 250;
      float: left;
@@ -71,9 +71,11 @@ button[type=button]{
  }
  h2{
      font-size: 1.2em;
+     text-align: right;
+     font-weight: bolder;
  }
  h3{
-     font-size: 0.8em;
+     font-size: 0.5em;
  }
  .info{
     width: 17em;
