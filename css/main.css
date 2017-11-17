@@ -51,7 +51,7 @@ button[type=button]{
    color: #2B2B2B;
    border-bottom: 0.2em solid #F7B617;
  }
-.section2{
+#section2{
      background-color:grey;
      width: 100%;
      height: 40%;
@@ -109,4 +109,10 @@ button[type=button]{
  #graf_net{
     background-image: url("../assets/images/graph.png");
     background-repeat: no-repeat;
+ }
+ #section3{
+    margin-left: 3em;
+ }
+ #section4{
+    margin-left: 3em;
  }
