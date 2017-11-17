@@ -1,51 +1,56 @@
 body{
-  margin: 0 auto;
-  overflow: auto;
-  font-family: 'Patua One', cursive;
+    margin: 0 auto;
+    overflow: auto;
+    font-family: 'Patua One', cursive;
 }
 header{
-  background-color: white;
+    background-color: white;
 }
 #logo{
-  width: 10em;
-  margin: 1em 0 1em 35em;
+    width: 10em;
+    margin: 1em 0 1em 35em;
 }
 #bars{
-  color: black;
-  font-size: 1.8em;
+    color: black;
+    font-size: 1.8em;
 }
 .section1{
-  background-color: #E1E1E1;
-  height: 6em;
-  padding-top: 2em;
+    background-color: #E1E1E1;
+    height: 6em;
+    padding-top: 2em;
 }
 #titulo {
-  margin-left: 2em;
-  color: #2B2B2B;
-  font-size: 1.7em;
+    margin-left: 2em;
+    color: #2B2B2B;
+    font-size: 1.7em;
 }
 #icon{
-  color: black;
-  margin-left: 0.5em;
-  font-size: 1.8em;
+    color: black;
+    margin-left: 0.5em;
+    font-size: 1.8em;
 }
 a{
-  text-decoration: none;
-  color: #2B2B2B;
+    text-decoration: none;
+    color: #2B2B2B;
 }
-.subtitulo{
-  font-size: 1.2em;
-  padding-top: 1em;
+ul{
+  list-style: none;
+  line-height: 2em;
+  overflow: auto;
 }
-#sub1{
-  margin-left: 2.8em;
+li{
+  float: left;
+  text-align: center;
 }
-#sub2, #sub3{
-  margin-left: 1em;
-}
-
-
-
+button[type=button]{
+   font-size: 1.2em;
+   font-weight: bold;
+   background-color: #E1E1E1;
+   padding: 0.1em 0.8em 0.6em 0.8em;
+   border: none;
+   color: #2B2B2B;
+   border-bottom: 0.2em solid #F7B617;
+ }
 .section2{
      background-color:grey;
      width: 100%;
@@ -61,6 +66,9 @@ a{
      float: left;
      outline: 1px solid red;
  }
+ #enrolmment{
+   margin-left: 10em;
+ }
  h2{
      font-size: 1.2em;
  }
@@ -71,7 +79,7 @@ a{
     width: 17em;
     height: 5em;
     margin: 2em;
-    background-color:  #fff;  
+    background-color:  #fff;
     outline: 1px solid red;
  }
  .dato1, .dato2{
@@ -85,19 +93,20 @@ a{
  }
  .graficos{
      width:16em;
-     height:16em;
-     margin: 3em;
+     height:10em;
+     margin-left: 3em;
+     margin-bottom: 3em;
      outline: 1px solid blue;
  }
  #graf_enrolmment{
      background-image: url("../assets/images/bar-graph.png");
-     background-size: cover;
+     background-repeat: no-repeat;
  }
  #graf_achievement{
     background-image: url("../assets/images/graph.png");
-    background-size: cover;
+    background-repeat: no-repeat;
  }
  #graf_net{
     background-image: url("../assets/images/graph.png");
-    background-size: cover;
+    background-repeat: no-repeat;
  }

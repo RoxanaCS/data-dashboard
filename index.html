@@ -11,71 +11,105 @@
     <a id="bars" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
   </header>
   <section class="section1">
-    <div>
-    <a id="titulo" href="#" onclick="add()">SANTIAGO DE CHILE 2017 - II</a>
-    <a id="icon" href="#"><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    <!-- MENU PARA SELECCIONAR CADA SEDE-->
+    <select>
+      <option value="Santiago" class="sede">Santiago de Chile</option>
+      <option value="Lima" class="sede">Lima</option>
+      <option value="Arequipa" class="sede">Arequipa</option>
+      <option value="Mexico" class="sede">Ciudad de México</option>
+    </select>
+      <!-- MENU PARA SELECCIONAR CADA GENERACION-->
+
+    <div class="menu">
+      <ul>
+        <li><button type="button" name="button" data-tab-seleccionado="tabOverview" class="tab">OVERVIEW</button></li>
+        <li><button type="button" name="button"data-tab-seleccionado="tabStudents" class="tab">STUDENTS</button></li>
+      </ul>
     </div>
-    <div class="subtitulo">
-      <a id="sub1" href="#">OVERVIEW</a>
-      <a id="sub2" href="#">STUDENTS</a>
-      <a id="sub3" href="#">TEACHERS</a>
+    <div class="">
+      <article id="overview">
+        <!--PONER EL CONTENIDO DEl MENU DE LAS NOTAS -->
+        <section id="section2">
+          <div class="box" id="enrolmment">
+            <div class="info">
+              <div class="dato1">
+                <h2>120</h2>
+                <h3># STUDENTS CURRENTLY ENROLLED</h3>
+              </div>
+              <div class="dato2">
+                <h2>20%</h2>
+                <h3>%DROPOUT</h3>
+              </div>
+            </div>
+            <div class="graficos" id="graf_enrolmment">
+              <!-- insertar grafico -->
+            </div>
+          </div>
+
+          <div class="box" id="achievement">
+            <div class="info">
+              <div class="dato1">
+                <h2>105</h2>
+                <h3># STUDENTS THAT MEET THE TARGET</h3>
+              </div>
+              <div class="dato2">
+                <h2>78% </h2>
+                <h3>% OF TOTAL (135)</h3>
+              </div>
+            </div>
+            <div class="graficos"  id="graf_achievement">
+              <!-- insertar grafico -->
+            </div>
+          </div>
+
+          <div class="box" id="net">
+            <div class="info">
+              <div class="dato1">
+                <h2>78%</h2>
+                <h3>% cumulative NPS</h3>
+              </div>
+              <div class="dato2">
+                <h3>60 % Promoters</h3>
+                <h3>30 % Passive</h3>
+                <h3>10 % Detractors</h3>
+              </div>
+            </div>
+            <div class="graficos" id="graf_net">
+              <!-- insertar grafico -->
+            </div>
+          </div>
+        </section>
+        <!--SECCION DE HABILIDADES TECNICAS -->
+        <section class="section3">
+          <h2>TEXT SKILLS</h2>
+          <select>
+            <option value="overall" class="sede">Overall</option>
+            <option value="sprint1" class="sede">Sprint 1</option>
+            <option value="sprint2" class="sede">Sprint 2</option>
+            <option value="sprint3" class="sede">Sprint 3</option>
+            <option value="sprint4" class="sede">Sprint 4</option>
+          </select>
+        </section>
+          <!--SECCION DE HABILIDADES SOCIO-EMOCIONALES -->
+        <section class="section4">
+          <h2>HSE SKILLS</h2>
+          <select>
+            <option value="overall" class="sede">Overall</option>
+            <option value="sprint1" class="sede">Sprint 1</option>
+            <option value="sprint2" class="sede">Sprint 2</option>
+            <option value="sprint3" class="sede">Sprint 3</option>
+            <option value="sprint4" class="sede">Sprint 4</option>
+          </select>
+      </article>
+      <article id="students">
+        <!--PONER EL CONTENIDO DEL MENU DE ESTUDIANTES -->
+      </article>
     </div>
   </section>
 
-  <section id="section2">
-    <div class="box" id="enrolmment">
-      <div class="info">
-        <div class="dato1">
-          <h2>120</h2>
-          <h3># STUDENTS CURRENTLY ENROLLED</h3>
-        </div>
-        <div class="dato2">
-          <h2>20%</h2>
-          <h3>%DROPOUT</h3>
-        </div>
-      </div>
-      <div class="graficos" id="graf_enrolmment">
-        <!-- insertar grafico -->
-      </div>
-    </div>
-
-    <div class="box" id="achievement">
-      <div class="info">
-        <div class="dato1">
-          <h2>105</h2>
-          <h3># STUDENTS THAT MEET THE TARGET</h3>
-        </div>
-        <div class="dato2">
-          <h2>78% </h2>
-          <h3>% OF TOTAL (135)</h3>
-        </div>
-      </div>
-      <div class="graficos"  id="graf_achievement">
-        <!-- insertar grafico -->
-      </div>
-    </div>
-
-    <div class="box" id="net">
-      <div class="info">
-        <div class="dato1">
-          <h2>78%</h2>
-          <h3>% cumulative NPS</h3>
-        </div>
-        <div class="dato2">
-          <h3>60 % Promoters</h3>
-          <h3>30 % Passive</h3>
-          <h3>10 % Detractors</h3>
-        </div>
-      </div>
-      <div class="graficos" id="graf_net">
-        <!-- insertar grafico -->
-      </div>
-    </div>
   </section>
+
   <body>
-
-ESTO ES UNA PRUEBA
-
     <script src="https://use.fontawesome.com/7873633050.js"></script>
 		<!-- Base de datos -->
 		<script src="./js/data.js"></script>
