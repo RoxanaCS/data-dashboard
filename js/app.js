@@ -127,7 +127,7 @@ google.charts.setOnLoadCallback(drawTrendlines);
 function drawTrendlines() {
       var data = new google.visualization.DataTable();
       data.addColumn('number', 'X');
-      data.addColumn('number', 'Satidfaction');
+      data.addColumn('number', 'Satisfaction');
 
       data.addRows([
          [0, 0],    [1, 23],   [2, 10],  [3, 16],  [4, 17],
@@ -139,7 +139,7 @@ function drawTrendlines() {
           title: 'Sprint'
         },
         vAxis: {
-          title: 'Satidfaction'
+          title: 'Satisfaction'
         },
         colors: ['#F9A91A', '#F9A91A'],
         trendlines: {
@@ -150,7 +150,7 @@ function drawTrendlines() {
       var chart = new google.visualization.LineChart(document.getElementById('graf_student'));
       chart.draw(data, options);
     }
-//grafico
+//grafico teacher
 google.charts.load('current', {packages: ['corechart', 'line']});
 google.charts.setOnLoadCallback(drawTrendlinesTeacher);
 
@@ -211,6 +211,8 @@ function drawTrendlinesNet() {
       chart.draw(data, options);
     }
 //graf_jedi
+google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawTrendlinesJedi);
 function drawTrendlinesJedi() {
       var data = new google.visualization.DataTable();
       data.addColumn('number', 'X');

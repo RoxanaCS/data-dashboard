@@ -248,6 +248,7 @@ h3{
     overflow: auto;
     float: left;
     width: 28em;
+    height: 29em;
     margin-right: 4em;
     margin-top: 2em;
   /*outline: 1px solid red;*/
@@ -305,6 +306,7 @@ h3{
     overflow: auto;
     width: 28em;
     margin-top: 2em;
+    height: 29em;
     /*outline: 1px solid red;*/
 }
 .tituloNotas .fa-handshake-o{
