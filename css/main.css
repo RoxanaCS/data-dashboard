@@ -1,3 +1,4 @@
+
 body{
     margin: 0 auto;
     overflow: auto;
@@ -141,15 +142,7 @@ button[type=button]{
   /*outline: 1px solid red;*/
 }
 .tituloNotas .fa-cogs{
-  color: #F9A91A;
-  font-size: 1.5em;
-  margin-right: 0.5em;
-}
-.tituloNotas{
-  float: left;
-  margin-top: 1.3em;
-  margin-left: 2em;
-  color: #333333;
+  /* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh*/
 }
 .sprint{
   margin-top: 2.1em;
@@ -167,17 +160,7 @@ button[type=button]{
   margin-top: 6em;
   margin-left: 11em;
 }
-#boxNotas H2 {
-  color: #6BAF21;
-  font-size: 1.5em;
-  text-align: center;
-}
-#boxNotas .fa-female {
-  margin-left: 0.2em;
-  color: #6BAF21;
-  font-size: 1em;
-}
-#boxNotas H3{
+#boxNotas h3{
   margin-top: -1.5em;
   font-size: 0.7em;
   text-align: center;
@@ -205,7 +188,7 @@ button[type=button]{
   margin-top: 6em;
   margin-left: 11em;
 }
-#boxNotas2 H2 {
+#boxNotas2 h2 {
   color: red;
   font-size: 1.5em;
   text-align: center;
@@ -216,7 +199,7 @@ button[type=button]{
   font-size: 1em;
 
 }
-#boxNotas2 H3{
+#boxNotas2 h3{
   margin-top: -1.5em;
   font-size: 0.7em;
   text-align: center;
@@ -267,11 +250,318 @@ button[type=button]{
   outline: 1px solid green;
   display: inline-block;
 }
-#boxPorcent H2 {
+#boxPorcent h2 {
   margin-left: 2em;
   color: #F9A91A;
   font-size: 1.5em;
   text-align: center;
   float: left;
+}
+/*Seccion 2kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk*/
+
+#section2{
+  background-color: #F7F7F7;
+  margin: 2em 5em 2em 5em;
+  height: 24.5em;
+/*  outline: 1px solid green;*/
+
+ }
+.box{
+     background-color: #fff;
+     width: 40%;
+     margin:1em 3em 1em 3em;
+     height: 23em;
+     float: left;
+     margin:auto;
+     margin:1em 3em 1em 3em;
+  /*   outline: 1px solid red;*/
+ }
+
+ h1{
+margin-bottom: 0.3em;
+font-size: 1em;
+}
+ h2{
+     font-size: 1em;
+     text-align: right;
+     font-weight: bolder;
+     color: #2B2B2B;
+     margin-top: 0.5em;
+     margin-bottom: 0.3em;
+     margin-right: 0.5em;
+ }
+  #nMujer i{
+    color:black;
+ }
+ #desercion{
+    color: red;
+ }
+#nCumple, #netPromoter{
+    color: green;
+}
+ h3{
+     font-size: 0.5em;
+     text-align: right;
+     margin-left: 0;
+     margin-bottom: 0.3em;
+     /*outline: 1px solid blue;*/
+ }
+ .info{
+    width: 20em;
+    height: 6.2em;
+    margin: auto;
+    margin-top: 0em;
+    margin-bottom: 1em;
+    background-color:  #fff;
+/*    outline: 1px solid red;*/
+ }
+ .dato1, .dato2{
+     width: 8em;
+     height: 3.5em;
+     background-color: #F7F7F7;
+     float: left;
+     margin-left: 1.5em;
+     text-align: right;
+/*     outline: 1px solid green;*/
+ }
+ .dato2{
+     text-align: left;
+ }
+ .graficos{
+     width:20em;
+     height:9em;
+     margin-left: 3em;
+     margin-bottom: 3em;
+/*     outline: 1px solid blue;*/
+ }
+ #graf_enrolmment,#graf_achievement{
+     width: 28em; 
+     height: 14em;
+     margin:auto;
+ }
+
+ /*Seccion 5*/
+  #seccion5{
+  background-color: #F7F7F7;
+  margin: 2em 5em 2em 5em;
+  height: 18em;
+  background-color: #F7F7F7;
+/*  outline: 1px solid green;*/
+  }
+  .boxes{
+     background-color: #fff;
+     width: 30%;
+     height: 18em;
+     float: left;
+     margin:auto;
+     margin: 1em;
+/*     outline: 1px solid red;*/
+  }
+   #graf_student{
+     width: 350px; 
+     height: 150px;
+     margin:auto;
+ }
+    #graf_teacher{
+     width: 350px; 
+     height: 150px;
+     margin:auto;
+ }
+    #graf_net{
+     width: 350px; 
+     height: 150px;
+     margin:auto;
+ }
+/*student*/
+.specializacion{
+width: 25%;
+height: 100em;
+color: #000;
+float: left;
+margin-left: 10%;
+/*outline: 1px solid blue; */
+}
+#titleSpe{
+  font-size: 1.5em;
+  margin-bottom: 0.3em;
+}
+.specializacion ul{
+  list-style: none;
+  text-align: left;
+/*  outline:1px solid yellow;*/
+}
+.specializacion li{
+  margin-left: 0;
+  text-decoration:none;
+}
+.specializacion li i{
+  text-align: left;
+
+  color: #F9A91A;
+  margin-left: 0;
+}
+.list{
+  margin-left: 1em;
+}
+
+.recuadro{
+  width: 20em;
+  height: 10em;
+  border:#fff;
+  border-radius: 3px;
+  background-color: #fff;
+}
+.search{
+  width: 40em;
+  height: 1.8em;
+  display: inline-block;
+  clear: right;
+  margin-left: 2em;
+  background-color: #fff;
+  border:1px solid #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 3px #ddd;
+  /*outline: 1px solid green; */
+}
+.fa-search{
+  margin: auto;
+  margin-left: 0.5em;
+  margin-top: 0.8em;
+  color: grey;
+}
+/*student*/
+.derecho{
+  width: 65%;
+  height: 100em;
+  float: right;
+  /*outline: 1px solid pink;*/
+}
+.boxStudent{
+  width: 50em;
+  height: 15em;
+  margin: 2em 1em 2em 2em;
+  float: left;
+  background-color: #fff;
+  border:#fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 3px #ddd;
+  /*outline: 1px solid red;*/
+}
+
+.imageStudent{
+  width:11em;
+  height: 11em;
+  margin: 1em;
+  float: left;
+  background-image:url(../assets/images/student2.jpg);
+  background-repeat: no-repeat;;  
+  /*outline: 1px solid red;*/
+}
+.search{
+  width:50em;
+  height: 3em;
+  float: left;
+  border:#fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 3px #ddd;
+ /* outline: 1px solid red;*/
+}
+.search input{
+  width: 90%;
+  margin:auto;
+  border:none;
+}
+/*icono dentro del placeholder
+::-webkit-input-placeholder::before { font-family: fontAwesome; content:'\f002  '; color: #69f }
+::-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #69f } // firefox 19+ /
+:-ms-input-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #69f } 
+input:-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #69f }*/
+
+.datoStudent{
+  width:15em;
+  height: 10em;
+  float: left;
+  border:grey;
+  border-radius: 5px;
+ /* outline: 1px solid green;*/
+}
+.datoStudent h1{
+  font-size: 2em;
+  text-align: left;
+  margin-top: 0.3em;
+}
+.datoStudent h2{
+   font-size: 1em;
+  text-align: left;
+}
+.datoStudent ul{
+list-style:none;
+float: left;
+}
+.datoStudent ul li{
+  width: 30%;
+  height: 2em;
+  display: block;
+  text-decoration: none;
+  background-color: #F7F7F7;
+  border:grey;
+  font-size: .8em;
+  margin: 3px;
+  margin-left: 0;
+  float: left;
+  outline: 1px solid red;
+}
+#java{
+  margin-left: 0;
+}
+.list2{
+  width: 100%;
+  text-align: left;
+  outline: 1px solid green;
+}
+.buttonStudent{
+  width: 20em;
+  height: 10em;
+  float: left;
+  background-color: #fff;
+/*  outline: 1px solid blue;*/
+}
+
+.datos{
+  display: block;
+  width: 25%;
+  height: 4em;
+  float:left;
+  margin: 0.5em;
+  background-color: #F7F7F7;
+}
+.datos span{
+  display: block;
+  margin: auto;
+  margin:0.3em;
+}
+#dato1{
+  margin-left: 1em;
+}
+.num{
+  font-size: 1.5em;
+  margin:auto;
+  font-weight: bolder;
+}
+.small{
+  font-size: .5em;
+  margin-left: 0.5em;
+}
+#verPerfil{
+  width: 60%;
+  height: 2em;
+  display: block;
+  float: right;
+  background: none;
+  text-decoration:none; 
+  text-align: right;
+  margin-top: 0;
+  margin-right: 1em;
+/*  outline: 1px solid green;*/
 
 }

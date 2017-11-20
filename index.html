@@ -159,17 +159,159 @@
             <!--PONER EL CONTENIDO DEL MENU DE ESTUDIANTES -->
           </article>
         </div>
+        <!--PONER EL CONTENIDO DEl MENU DE LAS NOTAS -->
+        <!--SECCION DE LOS PRIMEROS GRAFICOS DE BARRA-->
 
+        <section id="section2">
+          <div class="box" id="enrolmment">
+            <div class="info">
+              <h1>ENROLMENT</h1>
+              <div class="dato1">
+                <h2 class="nMujer">120 <i class="fa fa-female" aria-hidden="true"></i></h2>
+                <h3># STUDENTS CURRENTLY ENROLLED</h3>
+              </div>
+              <div class="dato2">
+                <h2 id="desercion">20% <i class="fa fa-arrow-up" aria-hidden="true"></i></h2>
+                <h3>%DROPOUT</h3>
+              </div>
+            </div>
+            <div class="graficos" id="graf_enrolmment">
+              <!-- insertar grafico -->
+            </div>
+          </div>
 
-      </section>
-    </div>
+          <div class="box" id="achievement">
+            <div class="info">
+              <h1>ACHIEVEMENT</h1>
+              <div class="dato1">
+                <h2>105</h2>
+                <h3># STUDENTS THAT MEET THE TARGET</h3>
+              </div>
+              <div class="dato2">
+                <h2 id="nCumple">78% <i class="fa fa-arrow-up" aria-hidden="true"></i></h2>
+                <h3 id="totalCumple">% OF TOTAL (135)</h3>
+              </div>
+            </div>
+            <div class="graficos"  id="graf_achievement">
+              <!-- insertar grafico -->
+            </div>
+          </div>
 
-    <script src="https://use.fontawesome.com/7873633050.js"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        </section>
+        
 
-    		<!-- Base de datos -->
-    <script src="./js/data.js"></script>
-    		<!-- Aquí va tus archivos JS -->
-    <script src="./js/app.js"></script>
-  </body>
+        <!--SECCION DE LOS ULTIMOS GRAFICOS DE BARRA-->
+        <section id="section5">
+          <div class="boxes" id="student">
+            <div class="info">
+              <h1>STUDENT SATISFACTION</h1>
+              <div class="dato1">
+                <h2>140</h2>
+                <h3>% MEETING OR EXCEEDING ESPECTATIONS (CUMULATIVE)</h3>
+              </div>
+            </div>
+            <div class="graficos" id="graf_student">
+              <!-- insertar grafico -->
+            </div>
+          </div>
+
+          <div class="boxes" id="teacher">
+            <div class="info">
+              <h1>TEACHER RATING</h1>
+              <div class="dato1">
+                <h2>4.2</h2>
+                <h3>OVERALL TEACHER RATING (CUMULATIVE)</h3>
+              </div>
+              <div class="dato2">
+                <h2>78% </h2>
+                <h3>% OF TOTAL (135)</h3>
+              </div>
+            </div>
+            <div class="graficos"  id="graf_teacher">
+              <!-- insertar grafico -->
+            </div>
+          </div>
+
+          <div class="boxes" id="net">
+            <div class="info">
+              <h1>NET PROMOTER SCORE</h1>
+              <div class="dato1">
+                <h2 id="netPromoter">78% <i class="fa fa-arrow-up" aria-hidden="true"></i></h2>
+                <h3>% CUMULATIVE NPS</h3>
+              </div>
+              <div class="dato2">
+                <h3>60 % Promoters</h3>
+                <h3>30 % Passive</h3>
+                <h3>10 % Detractors</h3>
+              </div>
+            </div>
+            <div class="graficos" id="graf_net">
+              <!-- insertar grafico -->
+            </div>
+          </div>
+        </section>
+      </article>
+      <article id="students">
+        <!--PONER EL CONTENIDO DEL MENU DE ESTUDIANTES -->
+        <section class="specializacion">
+          <div class="recuadro">
+            <ul>
+              <li id="titleSpe">Specializacion:</li>
+              <li><i class="fa fa-square-o" aria-hidden="true"></i><span class="list"> Javascript</span></li>
+              <li><i class="fa fa-square-o" aria-hidden="true"></i><span class="list"> Ux Design</span></li>
+              <li><i class="fa fa-square" aria-hidden="true"></i><span class="list"> Front end Designer</span></li>
+            </ul>
+          </div>
+        </section>
+
+        <aside class="derecho">
+          <div class="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" name="search">
+          </div>
+          <div class="boxStudent">
+            <div class="imageStudent"></div>
+            <div class="datoStudent">
+              <h1>Diana Navarro</h1>
+              <h2>Frontend Developed</h2>
+              <ul class="list2">
+                <li id="java">JavaScript</li>
+                <li>APIs</li>
+                <li>Jquery</li>
+              </ul>
+            </div>
+            <div class="buttonStudent">
+              <div class="datos" id="dato1">
+                <span class="num">95.6</span>
+                <span class="small">TECH SKILLS</span>
+              </div>
+              <div class="datos" id="dato2">
+                <span class="num">95.6</span>
+                <span class="small">LIFE SKILLS</span>
+              </div>
+              <div class="datos" id="dato3">
+                <span>INTERM</span>
+                <span class="small">ENGLISH SKILLS</span>
+
+              </div>
+            </div>
+                <div class="datos" id="verPerfil">
+                  <a href="#">Ver perfil <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                </div>
+          </div>
+          </aside>
+        </article>
+      </div>
+
+    </section>
+  </div>
+
+  <script src="https://use.fontawesome.com/7873633050.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <!-- Base de datos -->
+  <script src="./js/data.js"></script>
+  <!-- Aquí va tus archivos JS -->
+  <script src="./js/app.js"></script>
+</body>
 </html>
