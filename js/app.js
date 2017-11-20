@@ -66,11 +66,11 @@ cargarPagina();
 
       function drawStuffEnrolmment() {
         var data = new google.visualization.arrayToDataTable([
-          ['S 0', 'Units'],
-          ['S 1', 44],
-          ['S 2', 31],
-          ['S 3', 12],
-          ['S 4', 10],
+          ['Sprint', 'Units'],
+          ['S 1', 119],
+          ['S 2', 91],
+          ['S 3', 94],
+          ['S 4', 95],
         ]);
 
         var options = {
@@ -94,7 +94,7 @@ cargarPagina();
 
       function drawStuffAachievement() {
         var data = new google.visualization.arrayToDataTable([
-          ["S 0", 'Units'],
+          ["Sprint", 'Units'],
           ["S 1", 119],
           ["S 2", 74],
           ["S 3", 90],
@@ -126,10 +126,10 @@ google.charts.setOnLoadCallback(drawTrendlines);
 function drawTrendlines() {
       var data = new google.visualization.DataTable();
       data.addColumn('number', 'X');
-      data.addColumn('number', 'Dogs');
+      data.addColumn('number', 'Satidfaction');
 
       data.addRows([
-         [0, 0],    [1, 10],   [2, 23],  [3, 16],  [4, 17],
+         [0, 0],    [1, 23],   [2, 10],  [3, 16],  [4, 17],
 
       ]);
 
@@ -156,10 +156,10 @@ google.charts.setOnLoadCallback(drawTrendlinesTeacher);
 function drawTrendlinesTeacher() {
       var data = new google.visualization.DataTable();
       data.addColumn('number', 'X');
-      data.addColumn('number', 'Dogs');
+      data.addColumn('number', 'score');
 
       data.addRows([
-          [0, 0],    [1, 10],   [2, 23],  [3, 16],  [4, 17],
+          [0, 0],    [1, 4.6],   [2, 3.2],  [3, 4.4],  [4, 4.8],
 
       ]);
 
@@ -186,10 +186,10 @@ google.charts.setOnLoadCallback(drawTrendlinesNet);
 function drawTrendlinesNet() {
       var data = new google.visualization.DataTable();
       data.addColumn('number', 'X');
-      data.addColumn('number', 'Dogs');
+      data.addColumn('number', '%NPS');
 
       data.addRows([
-        [0, 0],    [1, 10],   [2, 23],  [3, 16],  [4, 17],
+        [0, 0],    [1, 78],   [2, 63],  [3,95 ],  [4, 87],
 
       ]);
 
@@ -209,3 +209,31 @@ function drawTrendlinesNet() {
       var chart = new google.visualization.LineChart(document.getElementById('graf_net'));
       chart.draw(data, options);
     }
+//graf_jedi
+function drawTrendlinesJedi() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'X');
+      data.addColumn('number', 'score Jedi');
+
+      data.addRows([
+          [0, 0],    [1, 10],   [2, 23],  [3, 16],  [4, 17],
+
+      ]);
+
+      var options = {
+        hAxis: {
+          title: 'Sprint'
+        },
+        vAxis: {
+          title: 'Jedi Rating'
+        },
+        colors: ['#F9A91A'],
+        trendlines: {
+          1: {type: 'linear', color: '#111', opacity: .3}
+        }
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('graf_jedi'));
+      chart.draw(data, options);
+    }
+
