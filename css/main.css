@@ -335,7 +335,7 @@ font-size: 1em;
 /*     outline: 1px solid blue;*/
  }
  #graf_enrolmment,#graf_achievement{
-     width: 28em; 
+     width: 28em;
      height: 14em;
      margin:auto;
  }
@@ -358,17 +358,17 @@ font-size: 1em;
 /*     outline: 1px solid red;*/
   }
    #graf_student{
-     width: 350px; 
+     width: 350px;
      height: 150px;
      margin:auto;
  }
     #graf_teacher{
-     width: 350px; 
+     width: 350px;
      height: 150px;
      margin:auto;
  }
     #graf_net{
-     width: 350px; 
+     width: 350px;
      height: 150px;
      margin:auto;
  }
@@ -454,7 +454,7 @@ margin-left: 10%;
   margin: 1em;
   float: left;
   background-image:url(../assets/images/student2.jpg);
-  background-repeat: no-repeat;;  
+  background-repeat: no-repeat;;
   /*outline: 1px solid red;*/
 }
 .search{
@@ -474,7 +474,7 @@ margin-left: 10%;
 /*icono dentro del placeholder
 ::-webkit-input-placeholder::before { font-family: fontAwesome; content:'\f002  '; color: #69f }
 ::-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #69f } // firefox 19+ /
-:-ms-input-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #69f } 
+:-ms-input-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #69f }
 input:-moz-placeholder::before  { font-family: fontAwesome; content:'\f002  '; color: #69f }*/
 
 .datoStudent{
@@ -558,7 +558,7 @@ float: left;
   display: block;
   float: right;
   background: none;
-  text-decoration:none; 
+  text-decoration:none;
   text-align: right;
   margin-top: 0;
   margin-right: 1em;
