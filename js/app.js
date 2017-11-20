@@ -1,29 +1,3 @@
-//función para el menú desplegable lateral
-/*function mostrar() {
-    document.getElementById("sidebar").style.width = "20em";
-    document.getElementById("contenido").style.marginLeft = "20em";
-    document.getElementById("abrir").style.display = "none";
-    document.getElementById("cerrar").style.display = "inline";
-}
-
-function ocultar() {
-    document.getElementById("sidebar").style.width = "0";
-    document.getElementById("contenido").style.marginLeft = "0";
-    document.getElementById("abrir").style.display = "inline";
-    document.getElementById("cerrar").style.display = "none";
-}*/
-//menu de sedes y generaciones
-var list =document.getElementById('list');
-list.addEventListener('click', function(){
-  var texto = list.firstChild.innerHTML;
-  var sede = document.getElementById('sede');
-  document.getElementById('parrafo').innerHTML = 'SANTIAGO DE CHILE ' + texto;
-  /*var menu2 = document.getElementsByClassName('menu_oculto');
-  menu2[0].classList.toggle('menu');
-  var contenedor = document.getElementsByClassName('contenedor');
-  contenedor[0].classList.toggle('contendor2');*/
-})
-
 //hacer que el menu cambie cada vez que es seleccionado
 var mostrarOcultar = function(e){
     var tabSeleccionado = e.target.dataset.tabSeleccionado;
@@ -44,7 +18,7 @@ var mostrarOcultar = function(e){
       //ocultar los demas menus
       overview.style.display="none";
       //mostrar estudiantes
-      students.style.display="block";
+      students.style.display="inline-block";
       elementosTab[1].style.borderBottom = "0.2em solid #F9A91A";
       elementosTab[0].style.borderBottom = "none";
     }
@@ -57,6 +31,33 @@ var cargarPagina = function(){
 }
 cargarPagina();
 
+//función para el menú desplegable lateral
+function mostrar() {
+    document.getElementById("sidebar").style.display = "inline";
+    document.getElementById("sidebar").style.width = "12em";
+    document.getElementById("contenido").style.marginLeft = "12em";
+    document.getElementById("abrir").style.display = "none";
+    document.getElementById("cerrar").style.display = "inline";
+}
+
+function ocultar() {
+    document.getElementById("sidebar").style.display = "none";
+    document.getElementById("sidebar").style.width = "0";
+    document.getElementById("contenido").style.marginLeft = "0";
+    document.getElementById("abrir").style.display = "inline";
+    document.getElementById("cerrar").style.display = "none";
+}
+//menu de sedes y generaciones
+var list =document.getElementById('list');
+list.addEventListener('click', function(){
+    var texto = list.firstChild.innerHTML;
+    var sede = document.getElementById('sede');
+    document.getElementById('parrafo').innerHTML = 'SANTIAGO DE CHILE ' + texto;
+  /*var menu2 = document.getElementsByClassName('menu_oculto');
+  menu2[0].classList.toggle('menu');
+  var contenedor = document.getElementsByClassName('contenedor');
+  contenedor[0].classList.toggle('contendor2');*/
+})
 
 /*seccion2*/
 //grafico Columnas Enrollments
@@ -236,4 +237,3 @@ function drawTrendlinesJedi() {
       var chart = new google.visualization.LineChart(document.getElementById('graf_jedi'));
       chart.draw(data, options);
     }
-

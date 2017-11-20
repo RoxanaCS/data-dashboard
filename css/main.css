@@ -7,30 +7,43 @@ body{
 }
 header{
     background-color: white;
-    height: 5em;
   /*  outline: 1px solid green;*/
 }
 #logo{
     width: 12em;
-    margin: 1.5em 0 0 33em;
+    margin: 1.5em 0 0 30em;
 }
-/*#sidebar{
-outline: 1px solid orange;
+#sidebar .fa-user-circle-o{
+    color: #333333;
+    font-size: 3em;
+    margin-left: 1.5em;
+    margin-top: 1.5em;
+}
+#sidebar h1{
+    color: #333333;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 4.5em;
+    margin-top: 1.5em;
 }
 .abrir-cerrar{
     color: black;
     font-size: 2em;
-    margin: 0.6em 0 0 1.5em;
+    margin: 0.8em 0 0 1.5em;
     float: left;
+}
+#sidebar{
+    display: none;
 }
 #cerrar{
   display: none;
-}*/
+}
 a:hover{
     color: #F9A91A;
 }
 #section1{
     background-color: #333333;
+    margin-top: -1em;
     height: 8em;
   /*  outline: 1px solid blue;*/
 }
@@ -41,6 +54,7 @@ nav .fa-caret-down{
 }
 nav{
     font-size: 1.2em;
+
 }
 nav ul:first-child{
     width: 11em;
@@ -51,6 +65,7 @@ nav ul li{
 }
 ul, ol{
     list-style: none;
+    z-index: 10;
 }
 nav li a{
     background-color: #333333;
@@ -136,27 +151,38 @@ button[type=button]{
  }
  .box{
      background-color: #fff;
-     width: 40%;
-     margin:1em 3em 1em 3em;
+     width: 28em;
+     margin:1em 2em 1em 2em;
      height: 23em;
      float: left;
      margin:auto;
      margin:1em 3em 1em 3em;
   /*   outline: 1px solid red;*/
 }
-
 h1{
-     margin-bottom: 0.3em;
-     font-size: 1em;
+     margin-bottom: 0.5em;
+     font-size: 1.5em;
+}
+.box .fa-university, .box .fa-trophy{
+     color: #F9A91A;
+     font-size: 1.4em;
+     margin-left: -1em;
+     margin-right: 0.5em;
 }
 h2{
      font-size: 1em;
-     text-align: right;
+     text-align: center;
      font-weight: bolder;
      color: #2B2B2B;
      margin-top: 0.5em;
      margin-bottom: 0.3em;
      margin-right: 0.5em;
+}
+#enrolmment{
+    margin-left: 4em;
+}
+#achievement{
+    margin-left: 1em;
 }
 #nMujer i{
     color:black;
@@ -169,7 +195,7 @@ h2{
 }
 h3{
      font-size: 0.5em;
-     text-align: right;
+     text-align: center;
      margin-left: 0;
      margin-bottom: 0.3em;
      /*outline: 1px solid blue;*/
@@ -202,11 +228,11 @@ h3{
      height:9em;
      margin-left: 3em;
      margin-bottom: 3em;
-/*     outline: 1px solid blue;*/
+/*   outline: 1px solid blue;*/
 }
 #graf_enrolmment,#graf_achievement{
-     width: 28em;
-     height: 14em;
+     width: 25em;
+     height: 12em;
      margin:auto;
 }
 
@@ -232,6 +258,7 @@ h3{
     margin-right: 0.5em;
 }
 .tituloNotas{
+    font-size: 1.5em;
     float: left;
     margin-top: 1.3em;
     margin-left: 2em;
@@ -254,17 +281,17 @@ h3{
     margin-left: 11em;
 }
 #boxNotas h2 {
-    color: #6BAF21;
+    color: #008000;
     font-size: 1.5em;
     text-align: center;
 }
 #boxNotas .fa-female {
     margin-left: 0.2em;
-    color: #6BAF21;
+    color: #008000;
     font-size: 1em;
 }
 #boxNotas h3{
-    margin-top: -1.5em;
+    margin-top: 0;
     font-size: 0.7em;
     text-align: center;
     color: #333333;
@@ -302,21 +329,20 @@ h3{
     font-size: 1em;
 }
 #boxNotas2 h3{
-    margin-top: -1.5em;
+    margin-top: 0;
     font-size: 0.7em;
     text-align: center;
     color: #333333;
 }
 #section4{
     width: 60em;
+    height: 16em;
     margin-left: 9em;
     margin-bottom: 2em;
     overflow: auto;
-    outline: 1px solid green;
     background-color: white;
 }
 #sub_section4{
-    outline: 1px solid red;
     width: 20em;
     float: left;
     margin-left: 3em;
@@ -325,7 +351,6 @@ h3{
     width: 30em;
     margin-top: 1em;
     margin-left: 2em;
-    outline: 1px solid green;
 }
 .tituloAuto .fa-handshake-o{
     color: #F9A91A;
@@ -338,27 +363,64 @@ h3{
     color: #333333;
 }
 .unidad{
-    margin-left: 4em;
+    margin-left: 4.5em;
+    margin-top: 1em;
     width: 10em;
     font-family: 'Patua One', cursive;
     font-size: 1.2em;
     border: none;
     outline: none;
     color: grey;
-    outline: 1px solid green;
 }
 #boxPorcent{
     overflow: auto;
-    outline: 1px solid green;
     display: inline-block;
+    margin-left: 23.2em;
+    margin-top: -3em;
 }
 #boxPorcent h2 {
-    margin-left: 2em;
+    margin-left: 4em;
     color: #F9A91A;
     font-size: 1.5em;
     text-align: center;
     float: left;
 }
+#boxNotas2{
+    width: 8em;
+    margin-top: 6em;
+    margin-left: 11em;
+}
+#boxAuto h2 {
+    color: #F9A91A;
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: 1em;
+}
+#boxAuto .fa-female {
+    color: #F9A91A;
+    font-size: 1em;
+    margin-left: 0.5em;
+}
+#boxAuto h3{
+  margin-left: 1em;
+    margin-top: 1em;
+    font-size: 0.7em;
+    text-align: center;
+    color: #333333;
+}
+.tituloAuto .fa-heartbeat{
+    color: #F9A91A;
+    font-size: 1.5em;
+    margin-right: 0.5em;
+}
+.tituloAuto{
+    font-size: 1.5em;
+    float: left;
+    margin-top: 1.3em;
+    margin-left: 2em;
+    color: #333333;
+}
+
  /*Seccion 5*/
 #section5{
     width: 60em;
@@ -417,13 +479,19 @@ h3{
 }
 
 /*student*/
+#students{
+    display: none;
+    overflow: auto;
+    /*outline: 1px solid red;*/
+}
 .specializacion{
+    margin-top: 1em;
+    margin-left: 3em;
     width: 25%;
     height: 100em;
     color: #000;
     float: left;
-    margin-left: 10%;
-    /*outline: 1px solid blue; */
+    /*outline: 1px solid blue;*/
 }
 #titleSpe{
     font-size: 1.5em;
@@ -446,7 +514,6 @@ h3{
 .list{
     margin-left: 1em;
 }
-
 .recuadro{
     width: 20em;
     height: 10em;
@@ -459,7 +526,8 @@ h3{
     height: 1.8em;
     display: inline-block;
     clear: right;
-    margin-left: 2em;
+    margin-top: 2em;
+    /*margin-left: 2em;*/
     background-color: #fff;
     border:1px solid #fff;
     border-radius: 5px;
@@ -482,7 +550,8 @@ h3{
 .boxStudent{
     width: 50em;
     height: 15em;
-    margin: 2em 1em 2em 2em;
+    margin-top: 2em;
+    /*margin: 2em 1em 2em 2em;*/
     float: left;
     background-color: #fff;
     border:#fff;
@@ -503,7 +572,6 @@ h3{
 .search{
     width:50em;
     height: 3em;
-    float: left;
     border:#fff;
     border-radius: 5px;
     box-shadow: 5px 5px 3px #ddd;

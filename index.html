@@ -3,18 +3,18 @@
   <head>
       <meta charset="utf-8">
       <title>Data Dashboard</title>
-      <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Patua+One|Roboto" rel="stylesheet">
       <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <!--<div id="sidebar">
-    ACA TENGO QUE PONER ALGO
-    </div>
-    <div id="contenido"> -->
+  <div id="sidebar">
+    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+    <h1>USER</h1>
+  </div>
+    <div id="contenido">
       <header>
-          <!--  <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()"><i class="fa fa-bars" aria-hidden="true"></i></a>
         <a id="cerrar" class="abrir-cerrar" href="javascript:void(0)" onclick="ocultar()"><i class="fa fa-bars" aria-hidden="true"></i></a>
-         -->
         <img id="logo" src="assets/images/logo-laboratoria.svg" alt="">
       </header>
       <section id="section1">
@@ -71,7 +71,7 @@
           <p id="parrafo">SANTIAGO DE CHILE 2017-II PM</p>
         </div>
         <!--menu para ver las notas y las estudiantes-->
-        <div class="menu_oculto">
+        <div>
           <ul>
             <li><button type="button" name="button" id="btn" data-tab-seleccionado="tabOverview" class="tab">OVERVIEW</button></li>
             <li><button type="button" name="button" data-tab-seleccionado="tabStudents" class="tab">STUDENTS</button></li>
@@ -83,24 +83,23 @@
             <section id="section2">
               <div class="box" id="enrolmment">
                 <div class="info">
-                  <h1>ENROLMENT</h1>
+                  <h1><i class="fa fa-university" aria-hidden="true"></i>ENROLMENT</h1>
                   <div class="dato1">
                     <h2 class="nMujer">120 <i class="fa fa-female" aria-hidden="true"></i></h2>
-                    <h3># STUDENTS CURRENTLY ENROLLED</h3>
+                    <h3>N° STUDENTS CURRENTLY ENROLLED</h3>
                   </div>
                   <div class="dato2">
                     <h2 id="desercion">20% <i class="fa fa-arrow-up" aria-hidden="true"></i></h2>
-                    <h3>%DROPOUT</h3>
+                    <h3>% DROPOUT</h3>
                   </div>
                 </div>
                 <div class="graficos" id="graf_enrolmment">
                   <!-- insertar grafico -->
                 </div>
               </div>
-
               <div class="box" id="achievement">
                 <div class="info">
-                  <h1>ACHIEVEMENT</h1>
+                  <h1><i class="fa fa-trophy" aria-hidden="true"></i>ACHIEVEMENT</h1>
                   <div class="dato1">
                     <h2>105 <i class="fa fa-female" aria-hidden="true"></i></h2>
                     <h3># STUDENTS THAT MEET THE TARGET</h3>
@@ -144,7 +143,7 @@
               </div>
                 <!--SECCION DE HABILIDADES SOCIO-EMOCIONALES -->
               <div id="sub_section2">
-                  <h2 class="tituloNotas"><i class="fa fa-handshake-o" aria-hidden="true"></i>HSE SKILLS</h2>
+                  <h2 class="tituloNotas"><i class="fa fa-handshake-o" aria-hidden="true"></i>LIFE SKILLS</h2>
                   <select class="sprint">
                     <option value="overall" class="sede">Overall</option>
                     <option value="sprint1" class="sede">Sprint 1</option>
@@ -168,7 +167,7 @@
               <!--SECCION DE LA AUTOEVALUACIÓN-->
             <section id="section4">
                 <div id="sub_section4">
-                  <h2 class="tituloAuto"><i class="fa fa-handshake-o" aria-hidden="true"></i>SELF EVALUATION</h2>
+                  <h2 class="tituloAuto"><i class="fa fa-heartbeat" aria-hidden="true"></i>SELF EVALUATION</h2>
                   <select class="unidad">
                     <option value="sprint1" class="sede">Sprint 1: Unity 01</option>
                     <option value="sprint1" class="sede">Sprint 1: Unity 02</option>
@@ -177,6 +176,10 @@
                     <option value="sprint1" class="sede">Sprint 2: Unity 02</option>
                     <option value="sprint1" class="sede">Sprint 2: Unity 03</option>
                   </select>
+                  <div id="boxAuto">
+                      <h2>135<i class="fa fa-female" aria-hidden="true"></i></h2>
+                      <h3>N° STUDENTS</h3>
+                  </div>
                 </div>
                 <div class="contenedorPorcent">
                   <img id="autoevaluacion" src="assets/images/auto.png" alt="">
@@ -253,8 +256,8 @@
                 </div>
 
               </section>
-          </article>
-          <article id="students">
+        </article>
+        <article id="students">
             <!--PONER EL CONTENIDO DEL MENU DE ESTUDIANTES -->
             <section class="specializacion">
               <div class="recuadro">
@@ -302,10 +305,9 @@
                       <a href="#">Ver perfil <i class="fa fa-caret-right" aria-hidden="true"></i></a>
                     </div>
               </div>
-              </aside>
-          </article>
-        </div>
-
+            </aside>
+        </article>
+     </section>
   <script src="https://use.fontawesome.com/7873633050.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
