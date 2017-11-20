@@ -6,54 +6,124 @@ body{
 }
 header{
     background-color: white;
+    height: 5em;
+  /*  outline: 1px solid green;*/
 }
 #logo{
-    width: 10em;
-    margin: 1em 0 1em 35em;
+    width: 12em;
+    margin: 1.5em 0 0 33em;
 }
-#bars{
+/*#sidebar{
+outline: 1px solid orange;
+}
+.abrir-cerrar{
     color: black;
-    font-size: 1.8em;
+    font-size: 2em;
+    margin: 0.6em 0 0 1.5em;
+    float: left;
+}
+#cerrar{
+  display: none;
+}*/
+a:hover{
+  color: #F9A91A;
 }
 .section1{
-    background-color: #F7B617;
-    height: 6em;
-    padding-top: 2em;
+    background-color: #333333;
+    height: 8em;
+  /*  outline: 1px solid blue;*/
 }
-#titulo {
-    margin-left: 2em;
-    color: #2B2B2B;
-    font-size: 1.7em;
+nav .fa-caret-down{
+  font-size: 1.5em;
+  margin-left: 0.5em;
+
 }
-#icon{
-    color: black;
-    margin-left: 0.5em;
-    font-size: 1.8em;
+nav{
+  font-size: 1.2em;
 }
-a{
-    text-decoration: none;
-    color: #2B2B2B;
+nav ul li{
+  margin-left: 2em;
 }
-ul{
+ul, ol{
+  list-style: none;
+
+}
+nav li a{
+  background-color: #333333;
+  color: white;
+  text-decoration: none;
+  padding: 0.8em 0.8em;
+  display: block;
+  /*outline: 1px solid red;*/
+}
+nav > li{
+  float: left;
+}
+nav li ul{
+  display: none;
+  position: absolute;
+  min-width: 10em;
+}
+nav li:hover > ul{
+  display: block;
+}
+nav li ul li{
+  position: relative;
+  font-size: 1em;
+}
+nav li ul li ul{
+  left: 6.4em;
+  top: 0;
+}
+/*.menu_oculto{
+  display: none;
+}
+.menu{
+  display: block;
+}*/
+.menu ul{
   list-style: none;
   line-height: 2em;
   overflow: auto;
 }
-li{
-  float: left;
+.menu ul li{
   text-align: center;
 }
+
+#btn{
+  margin-left: 10em;
+  float: left;
+  border-bottom: 0.2em solid #F9A91A;
+}
+
+#sede{
+  font-size: 1.5em;
+  margin-left: 7em;
+  color: #F9A91A;
+  float: left;
+}
+#parrafo{
+  margin-top: 0.1em;
+  width: 20em;
+}
+
 button[type=button]{
-   font-size: 1.2em;
+   font-size: 1.1em;
    font-weight: bold;
-   background-color: #F7B617;
+   background-color: #333333;
    padding: 0.1em 0.8em 0.6em 0.8em;
    border: none;
-   color: #2B2B2B;
-   border-bottom: 0.2em solid #2B2B2B;
+   color: white;
+   outline: none;
+   cursor: pointer;
  }
+ /*.contenedor{
+   display: none;
+ }
+ .contendor2{
+   display: block;
+ }*/
 #section2{
-     background-color:grey;
      width: 100%;
      height: 40%;
      margin-right: 20%;
@@ -115,36 +185,55 @@ button[type=button]{
  }
 #section3{
   background-color: white;
-  margin: 2em 5em 2em 5em;
-  height: 16em;
+  margin: 2em 8em 2em 8em;
   overflow: auto;
-  outline: 1px solid green;
+}
+
+.tituloNotas .fa-cogs{
+  color: #F9A91A;
+  font-size: 1.5em;
+  margin-right: 0.5em;
 }
 .tituloNotas{
   float: left;
+  margin-top: 1.3em;
   margin-left: 2em;
+  color: #333333;
 }
 .sprint{
-  margin-top: 1.5em;
+  margin-top: 1.6em;
   margin-left: 2em;
+  float: left;
+  font-family: 'Patua One', cursive;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  color: grey;
 }
-.contenTEC{
-  overflow: auto;
-  height: 6em;
-  outline: 1px solid red;
-}
+
 #boxNotas{
-  float: left;
-  width: 5em;
-  height: 5em;
-  outline: 1px solid red;
+  width: 8em;
+  margin-top: 5em;
+  margin-left: 13em;
 }
-#boxPorcent{
-  float: left;
-  margin-left: 1em;
-  width: 5em;
-  height: 5em;
-  outline: 1px solid red;
+#boxNotas H2 {
+  color: #6BAF21;
+  font-size: 1.5em;
+  text-align: center;
+}
+#boxNotas .fa-female {
+  margin-left: 0.2em;
+  color: #6BAF21;
+  font-size: 1em;
+}
+#boxNotas H3{
+  font-size: 0.7em;
+  text-align: center;
+  color: #333333;
+}
+#grafico_torta1{
+  margin-left: 8em;
+  width: 18em;
 }
 #section4{
   background-color: white;
