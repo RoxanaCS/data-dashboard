@@ -17,7 +17,7 @@
          -->
         <img id="logo" src="assets/images/logo-laboratoria.svg" alt="">
       </header>
-      <section class="section1">
+      <section id="section1">
         <!-- MENU PARA SELECCIONAR CADA SEDE-->
         <nav>
           <ul>
@@ -66,9 +66,11 @@
             </li>
           </ul>
         </nav>
+        <!-- div que contendrá la sede seleccionada-->
         <div id="sede">
           <p id="parrafo">SANTIAGO DE CHILE 2017-II PM</p>
         </div>
+        <!--menu para ver las notas y las estudiantes-->
         <div class="menu_oculto">
           <ul>
             <li><button type="button" name="button" id="btn" data-tab-seleccionado="tabOverview" class="tab">OVERVIEW</button></li>
@@ -77,60 +79,11 @@
         </div>
           <article id="overview">
             <!--PONER EL CONTENIDO DEl MENU DE LAS NOTAS -->
-            <!--SECCION DE LOS PRIMEROS GRAFICOS DE BARRA-->
-            <div class="contenedor">
-              <section id="section2">
-                <div class="box" id="enrolmment">
-                  <div class="info">
-                    <div class="dato1">
-                      <h2>120</h2>
-                      <h3># STUDENTS CURRENTLY ENROLLED</h3>
-                    </div>
-                    <div class="dato2">
-                      <h2>20%</h2>
-                      <h3>%DROPOUT</h3>
-                    </div>
-                  </div>
-                  <div class="graficos" id="graf_enrolmment">
-                    <!-- insertar grafico -->
-                  </div>
-                </div>
+            <!--SECCION DE LOS PRIMEROS GRAFICOS DE BARRA (Lucia)-->
 
-                <div class="box" id="achievement">
-                  <div class="info">
-                    <div class="dato1">
-                      <h2>105</h2>
-                      <h3># STUDENTS THAT MEET THE TARGET</h3>
-                    </div>
-                    <div class="dato2">
-                      <h2>78% </h2>
-                      <h3>% OF TOTAL (135)</h3>
-                    </div>
-                  </div>
-                  <div class="graficos"  id="graf_achievement">
-                    <!-- insertar grafico -->
-                  </div>
-                </div>
-
-                <div class="box" id="net">
-                  <div class="info">
-                    <div class="dato1">
-                      <h2>78%</h2>
-                      <h3>% cumulative NPS</h3>
-                    </div>
-                    <div class="dato2">
-                      <h3>60 % Promoters</h3>
-                      <h3>30 % Passive</h3>
-                      <h3>10 % Detractors</h3>
-                    </div>
-                  </div>
-                  <div class="graficos" id="graf_net">
-                    <!-- insertar grafico -->
-                  </div>
-                </div>
-              </section>
               <!--SECCION DE HABILIDADES TECNICAS -->
               <section id="section3">
+              <div id="sub_section1">
                 <h2 class="tituloNotas"><i class="fa fa-cogs" aria-hidden="true"></i>TECH SKILLS</h2>
                 <select class="sprint">
                   <option value="overall" class="sede">Overall</option>
@@ -138,6 +91,14 @@
                   <option value="sprint2" class="sede">Sprint 2</option>
                   <option value="sprint3" class="sede">Sprint 3</option>
                   <option value="sprint4" class="sede">Sprint 4</option>
+                  <option value="js_sprint5" class="sede">JS: Sprint 5</option>
+                  <option value="js_sprint6" class="sede">JS: Sprint 6</option>
+                  <option value="js_sprint7" class="sede">JS: Sprint 7</option>
+                  <option value="js_sprint8" class="sede">JS: Sprint 8</option>
+                  <option value="ux_sprint5" class="sede">UX: Sprint 5</option>
+                  <option value="ux_sprint6" class="sede">UX: Sprint 6</option>
+                  <option value="ux_sprint7" class="sede">UX: Sprint 7</option>
+                  <option value="ux_sprint8" class="sede">UX: Sprint 8</option>
                 </select>
                 <div class="contenedorNotas">
                   <div id="boxNotas">
@@ -146,24 +107,52 @@
                   </div>
                   <img id="grafico_torta1" src="assets/images/grafico_torta1.png" alt="">
                 </div>
-              </section>
+              </div>
                 <!--SECCION DE HABILIDADES SOCIO-EMOCIONALES -->
-              <section id="section4">
-                <h2 class="tituloNotas">HSE SKILLS</h2>
-                <select class="sprint">
-                  <option value="overall" class="sede">Overall</option>
-                  <option value="sprint1" class="sede">Sprint 1</option>
-                  <option value="sprint2" class="sede">Sprint 2</option>
-                  <option value="sprint3" class="sede">Sprint 3</option>
-                  <option value="sprint4" class="sede">Sprint 4</option>
-                </select>
-
-                <div id="boxNotas">
-                    <h2>90</h2>
-                    <h3># STUDENTS THAT MEET THE TARGET</h3>
+                <div id="sub_section2">
+                  <h2 class="tituloNotas"><i class="fa fa-handshake-o" aria-hidden="true"></i>HSE SKILLS</h2>
+                  <select class="sprint">
+                    <option value="overall" class="sede">Overall</option>
+                    <option value="sprint1" class="sede">Sprint 1</option>
+                    <option value="sprint2" class="sede">Sprint 2</option>
+                    <option value="sprint3" class="sede">Sprint 3</option>
+                    <option value="sprint4" class="sede">Sprint 4</option>
+                    <option value="sprint5" class="sede">Sprint 5</option>
+                    <option value="sprint6" class="sede">Sprint 6</option>
+                    <option value="sprint7" class="sede">Sprint 7</option>
+                    <option value="sprint8" class="sede">Sprint 8</option>
+                  </select>
+                  <div class="contenedorNotas">
+                    <div id="boxNotas2">
+                        <h2>60<i class="fa fa-female" aria-hidden="true"></i></h2>
+                        <h3>N° STUDENTS THAT MEET THE TARGET</h3>
+                    </div>
+                    <img id="grafico_torta1" src="assets/images/grafico_torta2.png" alt="">
+                  </div>
                 </div>
               </section>
-            </div>
+              <!--SECCION DE LA AUTOEVALUACIÓN-->
+              <section id="section4">
+                <div id="sub_section4">
+                  <h2 class="tituloAuto"><i class="fa fa-handshake-o" aria-hidden="true"></i>SELF EVALUATION</h2>
+                  <select class="unidad">
+                    <option value="sprint1" class="sede">Sprint 1: Unity 01</option>
+                    <option value="sprint1" class="sede">Sprint 1: Unity 02</option>
+                    <option value="sprint1" class="sede">Sprint 1: Unity 03</option>
+                    <option value="sprint1" class="sede">Sprint 2: Unity 01</option>
+                    <option value="sprint1" class="sede">Sprint 2: Unity 02</option>
+                    <option value="sprint1" class="sede">Sprint 2: Unity 03</option>
+                  </select>
+                </div>
+                <div class="contenedorPorcent">
+                  <img id="autoevaluacion" src="assets/images/auto.png" alt="">
+                  <div id="boxPorcent">
+                      <h2>20%</h2>
+                      <h2>60%</i></h2>
+                      <h2>20%</i></h2>
+                  </div>
+                </div>
+              </section>
               <!--SECCION DE LOS ULTIMOS GRAFICOS DE BARRA-->
           </article>
           <article id="students">

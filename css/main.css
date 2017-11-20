@@ -28,7 +28,7 @@ outline: 1px solid orange;
 a:hover{
   color: #F9A91A;
 }
-.section1{
+#section1{
     background-color: #333333;
     height: 8em;
   /*  outline: 1px solid blue;*/
@@ -41,12 +41,15 @@ nav .fa-caret-down{
 nav{
   font-size: 1.2em;
 }
+nav ul:first-child{
+  width: 11em;
+}
 nav ul li{
   margin-left: 2em;
+
 }
 ul, ol{
   list-style: none;
-
 }
 nav li a{
   background-color: #333333;
@@ -89,13 +92,11 @@ nav li ul li ul{
 .menu ul li{
   text-align: center;
 }
-
 #btn{
   margin-left: 10em;
   float: left;
   border-bottom: 0.2em solid #F9A91A;
 }
-
 #sede{
   font-size: 1.5em;
   margin-left: 7em;
@@ -106,7 +107,6 @@ nav li ul li ul{
   margin-top: 0.1em;
   width: 20em;
 }
-
 button[type=button]{
    font-size: 1.1em;
    font-weight: bold;
@@ -123,72 +123,23 @@ button[type=button]{
  .contendor2{
    display: block;
  }*/
-#section2{
-     width: 100%;
-     height: 40%;
-     margin-right: 20%;
-     overflow: auto;
- }
-.box{
-     background-color: #ddd;
-     width: 25%;
-     height: 250;
-     float: left;
-     outline: 1px solid red;
- }
-#enrolmment{
-   margin-left: 10em;
- }
- h2{
-     font-size: 1.2em;
-     text-align: right;
-     font-weight: bolder;
-     color: #2B2B2B;
- }
- h3{
-     font-size: 0.5em;
- }
- .info{
-    width: 17em;
-    height: 5em;
-    margin: 2em;
-    background-color:  #fff;
-    outline: 1px solid red;
- }
- .dato1, .dato2{
-     width: 40%;
-     height: 100%;
-     background-color: #ddd;
-     float: left;
-     margin-left: 1.5em;
-
-     outline: 1px solid green;
- }
- .graficos{
-     width:16em;
-     height:10em;
-     margin-left: 3em;
-     margin-bottom: 3em;
-     outline: 1px solid blue;
- }
- #graf_enrolmment{
-     background-image: url("../assets/images/bar-graph.png");
-     background-repeat: no-repeat;
- }
- #graf_achievement{
-    background-image: url("../assets/images/graph.png");
-    background-repeat: no-repeat;
- }
- #graf_net{
-    background-image: url("../assets/images/graph.png");
-    background-repeat: no-repeat;
- }
+/*ACA VA EL CSS DE LA LUCIA*/
 #section3{
-  background-color: white;
-  margin: 2em 8em 2em 8em;
+  width: 62em;
+  margin-left: 9em;
+  margin-bottom: 2em;
   overflow: auto;
+  /*outline: 1px solid green;*/
 }
-
+#sub_section1{
+  background-color: white;
+  overflow: auto;
+  float: left;
+  width: 28em;
+  margin-right: 4em;
+  margin-top: 2em;
+  /*outline: 1px solid red;*/
+}
 .tituloNotas .fa-cogs{
   color: #F9A91A;
   font-size: 1.5em;
@@ -201,8 +152,9 @@ button[type=button]{
   color: #333333;
 }
 .sprint{
-  margin-top: 1.6em;
+  margin-top: 2.1em;
   margin-left: 2em;
+  width: 7em;
   float: left;
   font-family: 'Patua One', cursive;
   font-size: 1.2em;
@@ -210,11 +162,10 @@ button[type=button]{
   outline: none;
   color: grey;
 }
-
 #boxNotas{
   width: 8em;
-  margin-top: 5em;
-  margin-left: 13em;
+  margin-top: 6em;
+  margin-left: 11em;
 }
 #boxNotas H2 {
   color: #6BAF21;
@@ -227,18 +178,100 @@ button[type=button]{
   font-size: 1em;
 }
 #boxNotas H3{
+  margin-top: -1.5em;
   font-size: 0.7em;
   text-align: center;
   color: #333333;
 }
 #grafico_torta1{
-  margin-left: 8em;
+  margin-left: 6em;
   width: 18em;
 }
-#section4{
+#sub_section2{
   background-color: white;
-  margin: 2em 5em 2em 5em;
-  height: 16em;
+  overflow: auto;
+  width: 28em;
+  margin-top: 2em;
+  /*outline: 1px solid red;*/
+}
+.tituloNotas .fa-handshake-o{
+  color: #F9A91A;
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+
+#boxNotas2{
+  width: 8em;
+  margin-top: 6em;
+  margin-left: 11em;
+}
+#boxNotas2 H2 {
+  color: red;
+  font-size: 1.5em;
+  text-align: center;
+}
+#boxNotas2 .fa-female {
+  margin-left: 0.2em;
+  color: red;
+  font-size: 1em;
+
+}
+#boxNotas2 H3{
+  margin-top: -1.5em;
+  font-size: 0.7em;
+  text-align: center;
+  color: #333333;
+}
+#section4{
+  width: 60em;
+  margin-left: 9em;
+  margin-bottom: 2em;
   overflow: auto;
   outline: 1px solid green;
+  background-color: white;
+}
+#sub_section4{
+  outline: 1px solid red;
+  width: 20em;
+  float: left;
+  margin-left: 3em;
+}
+#autoevaluacion{
+  width: 30em;
+  margin-top: 1em;
+  margin-left: 2em;
+  outline: 1px solid green;
+}
+.tituloAuto .fa-handshake-o{
+  color: #F9A91A;
+  font-size: 1.5em;
+  margin-right: 0.5em;
+}
+.tituloAuto{
+  margin-top: 1.3em;
+  margin-left: 2em;
+  color: #333333;
+}
+.unidad{
+  margin-left: 4em;
+  width: 10em;
+  font-family: 'Patua One', cursive;
+  font-size: 1.2em;
+  border: none;
+  outline: none;
+  color: grey;
+  outline: 1px solid green;
+}
+#boxPorcent{
+  overflow: auto;
+  outline: 1px solid green;
+  display: inline-block;
+}
+#boxPorcent H2 {
+  margin-left: 2em;
+  color: #F9A91A;
+  font-size: 1.5em;
+  text-align: center;
+  float: left;
+
 }
