@@ -17,6 +17,8 @@ Definición del diseño e implementación de un data dashboard para las Training
  + Lo más importante son el ingreso y la deserción, las notas por sprint y separadas en técnico y HSE.
  + Considerar un selector de idiomas, sino se puede, implementar el data dashboard en inglés.
  + Mostrar los resultados de la autoevaluación por unidad de cada sprint.
+ + Mostrar generaciones am y pm.
+ + Usar colores institucionales.
 
 ## Generalidades del sitio
 + Elegir fuente para las letras (google font).
