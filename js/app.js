@@ -1,4 +1,33 @@
-//hacer que el menu cambie cada vez que es seleccionado
+//función para el menú desplegable lateral
+function mostrar() {
+    document.getElementById("sidebar").style.display = "inline";
+    document.getElementById("sidebar").style.width = "12em";
+    document.getElementById("contenido").style.marginLeft = "12em";
+    document.getElementById("abrir").style.display = "none";
+    document.getElementById("cerrar").style.display = "inline";
+}
+
+function ocultar() {
+    document.getElementById("sidebar").style.display = "none";
+    document.getElementById("sidebar").style.width = "0";
+    document.getElementById("contenido").style.marginLeft = "0";
+    document.getElementById("abrir").style.display = "inline";
+    document.getElementById("cerrar").style.display = "none";
+}
+//menu de sedes y generaciones
+var list =document.getElementById('list');
+list.addEventListener('click', function(){
+    var texto = list.firstChild.innerHTML;
+    var sede = document.getElementById('sede');
+    document.getElementById('parrafo').innerHTML = 'SANTIAGO DE CHILE ' + texto;
+
+  /*var menu2 = document.getElementsByClassName('menu_oculto');
+  menu2[0].classList.toggle('menu');
+  var contenedor = document.getElementsByClassName('contenedor');
+  contenedor[0].classList.toggle('contendor2');*/
+})
+
+//hacer que el menu de pestañas cambie cada vez que es seleccionado
 var mostrarOcultar = function(e){
     var tabSeleccionado = e.target.dataset.tabSeleccionado;
     var elementosTab = document.getElementsByClassName("tab");
@@ -31,33 +60,6 @@ var cargarPagina = function(){
 }
 cargarPagina();
 
-//función para el menú desplegable lateral
-function mostrar() {
-    document.getElementById("sidebar").style.display = "inline";
-    document.getElementById("sidebar").style.width = "12em";
-    document.getElementById("contenido").style.marginLeft = "12em";
-    document.getElementById("abrir").style.display = "none";
-    document.getElementById("cerrar").style.display = "inline";
-}
-
-function ocultar() {
-    document.getElementById("sidebar").style.display = "none";
-    document.getElementById("sidebar").style.width = "0";
-    document.getElementById("contenido").style.marginLeft = "0";
-    document.getElementById("abrir").style.display = "inline";
-    document.getElementById("cerrar").style.display = "none";
-}
-//menu de sedes y generaciones
-var list =document.getElementById('list');
-list.addEventListener('click', function(){
-    var texto = list.firstChild.innerHTML;
-    var sede = document.getElementById('sede');
-    document.getElementById('parrafo').innerHTML = 'SANTIAGO DE CHILE ' + texto;
-  /*var menu2 = document.getElementsByClassName('menu_oculto');
-  menu2[0].classList.toggle('menu');
-  var contenedor = document.getElementsByClassName('contenedor');
-  contenedor[0].classList.toggle('contendor2');*/
-})
 
 /*seccion2*/
 //grafico Columnas Enrollments
@@ -68,10 +70,10 @@ list.addEventListener('click', function(){
       function drawStuffEnrolmment() {
         var data = new google.visualization.arrayToDataTable([
           ['Sprint', 'Units'],
-          ['S 1', 119],
-          ['S 2', 91],
-          ['S 3', 94],
-          ['S 4', 95],
+          ['S 1', 135],
+          ['S 2', 120],
+          ['S 3', 119],
+          ['S 4', 108],
         ]);
 
         var options = {
@@ -130,7 +132,7 @@ function drawTrendlines() {
       data.addColumn('number', 'Satisfaction');
 
       data.addRows([
-         [0, 0],    [1, 23],   [2, 10],  [3, 16],  [4, 17],
+         [0, 0],    [1, 86],   [2, 92],  [3, 83],  [4, 90],
 
       ]);
 
@@ -190,7 +192,7 @@ function drawTrendlinesNet() {
       data.addColumn('number', '%NPS');
 
       data.addRows([
-        [0, 0],    [1, 78],   [2, 63],  [3,95 ],  [4, 87],
+        [0, 0],    [1, 78],   [2, 63],  [3, 95],  [4, 87],
 
       ]);
 
@@ -219,7 +221,7 @@ function drawTrendlinesJedi() {
       data.addColumn('number', 'score Jedi');
 
       data.addRows([
-          [0, 0],    [1, 10],   [2, 23],  [3, 16],  [4, 17],
+          [0, 0],    [1, 4.5],   [2, 4.0],  [3, 4.8],  [4, 3.9],
 
       ]);
 
