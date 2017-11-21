@@ -40,6 +40,7 @@ Definición del diseño e implementación de un data dashboard para las Training
 + Crear div que contenga la sede y generación selecionada.
 + Crear un menú de 2 pestañas intercambiables para ver: Overview y Students.
 
+## Dentro de la pestaña Overview:
 ## Sección 2
 
 + Crear gráfico de "enrolment" (inscripción) que muestre el número de alumnas inscritas, la deserción por sprint y total.
@@ -63,3 +64,9 @@ Definición del diseño e implementación de un data dashboard para las Training
 
 + Crear gráfico de la puntuación de los profesores por sprint y total.
 + Crear gráfico de la puntuación de los Jedis por sprint y en total.
+
+## Dentro de la pestaña Students:
+
++ Crear cuadro de la especialización.
++ Crear cuadro del perfil de las alumnas.
+
